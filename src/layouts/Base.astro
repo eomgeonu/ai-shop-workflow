@@ -8,7 +8,19 @@ const { title = "AI Shop" } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen bg-white text-slate-900 p-8">
-    <slot />
+  <body class="min-h-screen bg-white text-slate-900">
+    <header class="border-b">
+      <nav class="mx-auto max-w-5xl flex items-center justify-between p-4">
+        <a href="/" class="font-bold">AI 상점</a>
+        <ul class="flex gap-4 text-sm">
+          <li><a href="/products" class="hover:underline">상품</a></li>
+          <li><a href="/categories" class="hover:underline">카테고리</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-5xl p-4">
+      <slot />
+    </main>
   </body>
 </html>
