@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="카테고리">
+  <h1 class="text-2xl font-bold">카테고리</h1>
+  <p class="mt-4">여기에 카테고리 목록이 들어갑니다.</p>
+</Base>
